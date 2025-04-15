@@ -1,0 +1,4 @@
+/* Import Tailwind CSS v4 styles (includes preflight, base, utilities) */
+@import "tailwindcss";
+
+/* Keep any custom base styles *you* specifically need below, if any */
