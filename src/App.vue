@@ -1,20 +1,34 @@
 <script setup>
-import { RouterView } from 'vue-router'
+// Removed RouterView import
 import NavBar from './components/NavBar.vue'
-import FooterBar from './components/FooterBar.vue' // Import FooterBar
+import FooterBar from './components/FooterBar.vue'
+import HeroSection from './components/HeroSection.vue'
+import AboutSection from './components/AboutSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
+import AchievementsSection from './components/AchievementsSection.vue' // Import Achievements
+import ExperiencesSection from './components/ExperiencesSection.vue' // Import Experiences
+import ContactSection from './components/ContactSection.vue'
 </script>
 
 <template>
-  <div id="app-container" class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex flex-col">
+  <div id="app-container" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     <NavBar />
-    <!-- Added flex-grow to make main content take available space -->
-    <main class="container mx-auto px-4 py-8 flex-grow">
-      <RouterView />
+    <main>
+      <HeroSection />
+      <AboutSection />
+      <AchievementsSection /> {/* Add Achievements Section */}
+      <ExperiencesSection /> {/* Add Experiences Section */}
+      <ProjectsSection />
+      <ContactSection />
     </main>
-    <FooterBar /> <!-- Use FooterBar -->
+    <FooterBar />
   </div>
 </template>
 
-<style scoped>
-/* Scoped styles for App.vue if needed */
+<style>
+/* Global styles can go here or in main.css */
+/* Ensure smooth scrolling behavior is enabled */
+html {
+  scroll-behavior: smooth;
+}
 </style>

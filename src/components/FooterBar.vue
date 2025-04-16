@@ -1,5 +1,7 @@
 <template>
-  <footer class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-center py-4 mt-auto">
+  <footer
+    class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-center py-4 mt-auto"
+  >
     <div class="container mx-auto px-4">
       &copy; {{ new Date().getFullYear() }} [Your Name]. All rights reserved.
       <!-- Optional: Add links to social media or other relevant info -->

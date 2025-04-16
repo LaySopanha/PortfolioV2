@@ -1,28 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
+// Router is still needed for Vue initialization, but routes are handled by App.vue sections now.
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
-    },
-    {
-      path: '/projects',
-      name: 'projects',
-      component: () => import('../views/ProjectsView.vue'),
-    },
+    // No routes needed for single-page layout
+    // You could potentially add routes later if specific sections
+    // should have unique URLs, but it complicates smooth scrolling.
   ],
+
+  // Optional: Add scroll behavior to reset scroll position if routes were used
+  // scrollBehavior(to, from, savedPosition) {
+  //   if (savedPosition) {
+  //     return savedPosition
+  //   } else {
+  //     return { top: 0 }
+  //   }
+  // }
 })
 
 export default router
