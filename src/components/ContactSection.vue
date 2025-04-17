@@ -1,5 +1,9 @@
 <template>
-  <section id="contact" class="py-20 px-4 bg-white dark:bg-gray-800 transition-colors duration-300">
+  <section
+    id="contact"
+    v-intersect
+    class="py-20 px-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm transition-colors duration-300" 
+  >
     <div class="container mx-auto max-w-3xl text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800 dark:text-white">Get In Touch</h2>
       <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">

@@ -1,6 +1,6 @@
 <template>
-  <!-- Enhanced card styling: subtle border, gradient background on image placeholder, improved shadow -->
-  <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl bg-white dark:bg-gray-800 transition-all duration-300 hover:-translate-y-1 flex flex-col group"> <!-- Added group class -->
+  <!-- Enhanced card styling: subtle border, gradient background on image placeholder, improved shadow, enhanced hover -->
+  <div class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl bg-white dark:bg-gray-800 transition-all duration-300 hover:-translate-y-1 flex flex-col group hover:border-emerald-400 dark:hover:border-emerald-500 hover:bg-gray-50/50 dark:hover:bg-gray-700/50"> <!-- Added group, hover border/bg -->
     <div class="relative h-48 sm:h-56 w-full overflow-hidden">
        <img v-if="project.imageUrl" :src="project.imageUrl" :alt="project.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
        <!-- Improved placeholder -->
@@ -19,7 +19,7 @@
         <span class="font-semibold text-sm text-gray-700 dark:text-gray-300">Tech Stack:</span>
         <div class="flex flex-wrap gap-2 mt-2">
           <span v-for="tech in project.techStack" :key="tech"
-                class="bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-300 text-xs font-medium px-2.5 py-1 rounded-md">
+                class="bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-300 text-xs font-medium px-2.5 py-1 rounded-md transition-transform duration-200 group-hover:scale-105"> 
             {{ tech }}
           </span>
         </div>

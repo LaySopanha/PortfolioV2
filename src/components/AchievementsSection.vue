@@ -1,7 +1,8 @@
 <template>
   <section
     id="achievements"
-    class="py-24 px-4 bg-emerald-50 dark:bg-gray-800/50 transition-colors duration-300 overflow-hidden"
+    v-intersect
+    class="py-24 px-4 transition-colors duration-300 overflow-hidden" 
   >
     <!-- Increased py padding -->
     <div class="container mx-auto">

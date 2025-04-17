@@ -1,5 +1,9 @@
 <template>
-  <section id="projects" class="py-20 px-4 bg-gray-50 dark:bg-gray-900 transition-colors duration-300 overflow-hidden">
+  <section
+    id="projects"
+    v-intersect
+    class="py-20 px-4 transition-colors duration-300 overflow-hidden" 
+  >
     <div class="container mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white motion-safe:animate-fade-in-down">My Projects</h2>
 
@@ -37,7 +41,7 @@
 
       <!-- Styled "No projects" message -->
       <transition name="fade">
-        <div v-if="filteredProjects.length === 0" class="text-center text-gray-500 dark:text-gray-400 mt-16 py-10 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+        <div v-if="filteredProjects.length === 0" class="text-center text-gray-500 dark:text-gray-400 mt-16 py-10 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-sm"> 
           <p class="text-xl font-medium">No projects found in this category yet.</p>
           <p class="mt-2">Check back later or select another category!</p>
         </div>

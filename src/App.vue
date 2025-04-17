@@ -8,6 +8,8 @@ import ProjectsSection from './components/ProjectsSection.vue'
 import AchievementsSection from './components/AchievementsSection.vue' // Import Achievements
 import ExperiencesSection from './components/ExperiencesSection.vue' // Import Experiences
 import ContactSection from './components/ContactSection.vue'
+import Highlight from './components/HighlightsSection.vue'
+// Removed SectionDivider import
 </script>
 
 <template>
@@ -15,10 +17,17 @@ import ContactSection from './components/ContactSection.vue'
     <NavBar />
     <main>
       <HeroSection />
+      
       <AboutSection />
-      <AchievementsSection /> {/* Add Achievements Section */}
-      <ExperiencesSection /> {/* Add Experiences Section */}
+      
+      <AchievementsSection />
+
+      <Highlight />
+      
+      <ExperiencesSection />
+      
       <ProjectsSection />
+      
       <ContactSection />
     </main>
     <FooterBar />

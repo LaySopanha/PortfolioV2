@@ -1,5 +1,9 @@
 <template>
-  <section id="highlights" class="py-24 px-4 bg-gray-100 dark:bg-gray-800/70 transition-colors duration-300">
+  <section
+    id="highlights"
+    v-intersect
+    class="py-24 px-4 bg-gray-100 dark:bg-gray-800/70 transition-colors duration-300"
+  >
     <div class="container mx-auto">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-center text-gray-800 dark:text-white motion-safe:animate-fade-in-down">
         Experience & Highlights
