@@ -7,26 +7,26 @@
       <!-- Text Content -->
       <div class="md:w-3/5 text-center md:text-left motion-safe:animate-fade-in-left">
         <h1
-          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 text-gray-900 dark:text-white leading-tight"
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 text-white leading-tight"
         >
-          Hi, I'm <span class="text-emerald-600 dark:text-emerald-400">Lay Sopanha</span>
+          Hi, I'm <span class="text-emerald-400">Lay Sopanha</span>
         </h1>
-        <!-- Typing Animation Placeholder -->
+        
         <p
-          class="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-medium h-16 md:h-auto"
+          class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 font-medium h-16 md:h-auto"
         >
-          <!-- Added height for stability during typing -->
+          
           A
-          <span class="font-semibold text-gray-800 dark:text-white">{{ typedRole }}</span
-          ><span class="typed-cursor text-emerald-600 dark:text-emerald-400">|</span> creating
+          <span class="font-semibold text-white">{{ typedRole }}</span
+          ><span class="typed-cursor text-emerald-400">|</span> creating
           innovative and user-centric solutions.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-10">
-          <!-- Added Icons to Buttons -->
+          
           <a
             href="#projects"
             @click.prevent="smoothScroll('#projects')"
-            class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
+            class="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
           <a
             href="#contact"
             @click.prevent="smoothScroll('#contact')"
-            class="inline-flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-sm hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
+            class="inline-flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-600 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-sm hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
-            class="text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 text-3xl transition-colors duration-200 transform hover:scale-110"
+            class="text-gray-400 hover:text-emerald-400 text-3xl transition-colors duration-200 transform hover:scale-110"
           >
             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -81,7 +81,7 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
-            class="text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 text-3xl transition-colors duration-200 transform hover:scale-110"
+            class="text-gray-400 hover:text-emerald-400 text-3xl transition-colors duration-200 transform hover:scale-110"
           >
             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -97,9 +97,9 @@
         class="md:w-2/5 flex justify-center md:justify-end mt-10 md:mt-0 motion-safe:animate-fade-in-right"
       >
         <div
-          class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-tr from-emerald-200 to-cyan-300 dark:from-emerald-800 dark:to-cyan-800 shadow-xl flex items-center justify-center overflow-hidden border-4 border-white dark:border-gray-700"
+          class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-tr from-emerald-800 to-cyan-800 shadow-xl flex items-center justify-center overflow-hidden border-4 border-gray-700"
         >
-          <span class="text-gray-500 dark:text-gray-400 text-lg font-medium"></span>
+          <span class="text-gray-400 text-lg font-medium"></span>
           <img src="/images/Profile1.jpg" alt="Your Name" class="w-full h-full object-cover" />
         </div>
       </div>

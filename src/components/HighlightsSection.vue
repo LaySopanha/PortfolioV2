@@ -2,10 +2,10 @@
   <section
     id="highlights"
     v-intersect
-    class="py-24 px-4 bg-gray-100 dark:bg-gray-800/70 transition-colors duration-300"
+    class="py-24 px-4 bg-gray-800/70 transition-colors duration-300" 
   >
     <div class="container mx-auto">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-center text-gray-800 dark:text-white motion-safe:animate-fade-in-down">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-center text-white motion-safe:animate-fade-in-down"> 
         Experience & Highlights
       </h2>
 
@@ -14,10 +14,10 @@
         <button
           @click="activeTab = 'achievements'"
           :class="[
-            'px-4 py-2 md:px-6 md:py-3 rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-800',
+            'px-4 py-2 md:px-6 md:py-3 rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800', 
             activeTab === 'achievements'
               ? 'bg-emerald-600 text-white shadow-md scale-105 focus:ring-emerald-500'
-              : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 focus:ring-gray-400'
+              : 'bg-gray-700 text-gray-300 hover:bg-gray-600 focus:ring-gray-500' 
           ]"
         >
           Achievements
@@ -25,10 +25,10 @@
         <button
           @click="activeTab = 'competitions'"
           :class="[
-            'px-4 py-2 md:px-6 md:py-3 rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-800',
+            'px-4 py-2 md:px-6 md:py-3 rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800', 
             activeTab === 'competitions'
               ? 'bg-sky-600 text-white shadow-md scale-105 focus:ring-sky-500'
-              : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 focus:ring-gray-400'
+              : 'bg-gray-700 text-gray-300 hover:bg-gray-600 focus:ring-gray-500' 
           ]"
         >
           Competitions
@@ -36,10 +36,10 @@
         <button
           @click="activeTab = 'volunteering'"
           :class="[
-            'px-4 py-2 md:px-6 md:py-3 rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-800',
+            'px-4 py-2 md:px-6 md:py-3 rounded-md font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800', 
             activeTab === 'volunteering'
               ? 'bg-indigo-600 text-white shadow-md scale-105 focus:ring-indigo-500'
-              : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 focus:ring-gray-400'
+              : 'bg-gray-700 text-gray-300 hover:bg-gray-600 focus:ring-gray-500' 
           ]"
         >
           Volunteering
@@ -50,19 +50,19 @@
       <div class="content-area">
         <!-- Achievements Slider (Placeholder) -->
         <div v-if="activeTab === 'achievements'" key="achievements-content">
-          <p class="text-center dark:text-gray-300">Achievements Slider will go here.</p>
+          <p class="text-center text-gray-300">Achievements Slider will go here.</p> 
           <!-- Actual Achievements Slider component/markup will be inserted later -->
         </div>
 
         <!-- Competitions Grid (Placeholder) -->
         <div v-if="activeTab === 'competitions'" key="competitions-content">
-           <p class="text-center dark:text-gray-300">Competitions Grid will go here.</p>
+           <p class="text-center text-gray-300">Competitions Grid will go here.</p> 
           <!-- Actual Competitions Grid markup will be inserted later -->
         </div>
 
         <!-- Volunteering Grid (Placeholder) -->
         <div v-if="activeTab === 'volunteering'" key="volunteering-content">
-           <p class="text-center dark:text-gray-300">Volunteering Grid will go here.</p>
+           <p class="text-center text-gray-300">Volunteering Grid will go here.</p> 
           <!-- Actual Volunteering Grid markup will be inserted later -->
         </div>
       </div>

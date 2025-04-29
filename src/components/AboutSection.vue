@@ -1,12 +1,12 @@
 <template>
   <section
     id="about"
-    class="py-20 px-4 bg-white/98 dark:bg-gray-900/95 backdrop-blur-sm transition-colors duration-300 overflow-hidden"
+    class="py-20 px-4 bg-gray-900/95 backdrop-blur-sm transition-colors duration-300 overflow-hidden"
   >
     <div class="container mx-auto max-w-6xl">
       <h2
         v-intersect
-        class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white"
+        class="text-3xl md:text-4xl font-bold mb-12 text-center text-white"
       >
         About Me
       </h2>
@@ -31,20 +31,20 @@
         <!-- Text Content -->
         <div
           v-intersect
-          class="lg:w-2/3 text-lg text-gray-600 dark:text-gray-300 space-y-10 delay-300"
+          class="lg:w-2/3 text-lg text-gray-300 space-y-10 delay-300"
         >
-          <!-- Increased spacing -->
+          
           <div>
             <h3
-              class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white border-b-2 border-emerald-500/50 pb-2 inline-block"
+              class="text-2xl font-semibold mb-4 text-white border-b-2 border-emerald-500/50 pb-2 inline-block"
             >
               My Journey
             </h3>
-            <!-- Added border -->
+            
             <p class="leading-relaxed mt-3">
-              <!-- Added margin top -->
+              
               Hello! I'm
-              <span class="font-semibold text-emerald-700 dark:text-emerald-400">Lay Sopanha</span>.
+              <span class="font-semibold text-emerald-400">Lay Sopanha</span>.
               My fascination with Computer Science began [briefly mention origin/spark]. This led me
               down a path of continuous learning and exploration, culminating in [mention key
               experience/education]. I thrive on solving complex problems and building [mention type
@@ -54,16 +54,16 @@
 
           <div>
             <h3
-              class="text-2xl font-semibold mb-5 text-gray-800 dark:text-white border-b-2 border-emerald-500/50 pb-2 inline-block"
+              class="text-2xl font-semibold mb-5 text-white border-b-2 border-emerald-500/50 pb-2 inline-block"
             >
               Core Skills
             </h3>
-            <!-- Added border -->
+            
             <div class="flex flex-wrap gap-3">
               <span
                 v-for="skill in skills"
                 :key="skill.name"
-                class="flex items-center bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-300 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm transition-transform hover:scale-105"
+                class="flex items-center bg-emerald-900/60 text-emerald-300 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm transition-transform hover:scale-105"
               >
                 <component
                   v-if="skill.icon"
@@ -76,22 +76,22 @@
                 {{ skill.name }}
               </span>
             </div>
-            <p class="text-sm mt-4 text-gray-500 dark:text-gray-400">
+            <p class="text-sm mt-4 text-gray-400">
               (And always eager to learn more!)
             </p>
           </div>
 
           <div>
             <h3
-              class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white border-b-2 border-emerald-500/50 pb-2 inline-block"
+              class="text-2xl font-semibold mb-4 text-white border-b-2 border-emerald-500/50 pb-2 inline-block"
             >
               My Approach
             </h3>
-            <!-- Added border -->
+            
             <p class="leading-relaxed mt-3">
-              <!-- Added margin top -->
+              
               I believe in a
-              <span class="font-medium text-gray-700 dark:text-gray-200"
+              <span class="font-medium text-gray-200"
                 >[mention approach - e.g., user-centric, data-driven, collaborative]</span
               >
               approach. Whether it's developing software or analyzing data, my focus is on

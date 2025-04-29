@@ -5,7 +5,8 @@
     class="py-20 px-4 transition-colors duration-300 overflow-hidden" 
   >
     <div class="container mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white motion-safe:animate-fade-in-down">My Projects</h2>
+ 
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white motion-safe:animate-fade-in-down">My Projects</h2> 
 
       <!-- Category Filter Tabs -->
       <div class="flex justify-center space-x-2 sm:space-x-3 mb-12 flex-wrap gap-y-3 motion-safe:animate-fade-in">
@@ -16,8 +17,8 @@
           :class="[
             'px-5 py-2 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 ease-in-out transform hover:scale-105',
             selectedCategory === category
-              ? 'bg-emerald-600 text-white shadow-lg ring-2 ring-offset-2 ring-emerald-500 dark:ring-offset-gray-900'
-              : 'bg-white dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 shadow-sm hover:shadow-md'
+              ? 'bg-emerald-600 text-white shadow-lg ring-2 ring-offset-2 ring-emerald-500 ring-offset-space-dark' // Adjusted ring offset
+              : 'bg-gray-700 text-gray-300 hover:bg-gray-600 shadow-sm hover:shadow-md' // Use permanent dark theme styles
           ]"
         >
           {{ category }}
@@ -41,7 +42,7 @@
 
       <!-- Styled "No projects" message -->
       <transition name="fade">
-        <div v-if="filteredProjects.length === 0" class="text-center text-gray-500 dark:text-gray-400 mt-16 py-10 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-lg bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-sm"> 
+        <div v-if="filteredProjects.length === 0" class="text-center text-gray-400 mt-16 py-10 border-2 border-dashed border-gray-700 rounded-lg bg-gray-800/80 backdrop-blur-sm shadow-sm">
           <p class="text-xl font-medium">No projects found in this category yet.</p>
           <p class="mt-2">Check back later or select another category!</p>
         </div>

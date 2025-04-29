@@ -7,9 +7,9 @@
     <!-- Increased py padding -->
     <div class="container mx-auto">
       <h2
-        class="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 text-center text-gray-800 dark:text-white motion-safe:animate-fade-in-down"
+        class="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 text-center text-white motion-safe:animate-fade-in-down"
       >
-        <!-- Increased bottom margin -->
+        
         Milestones & Achievements
       </h2>
 
@@ -39,11 +39,11 @@
             <!-- Fallback Background with Icon -->
             <div
               v-else
-              class="absolute inset-0 w-full h-full bg-gradient-to-br from-gray-400 to-gray-500 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center z-0"
+              class="absolute inset-0 w-full h-full bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center z-0"
             >
               <component
                 :is="heroIcons[achievement.icon] || heroIcons['academic-cap']"
-                class="h-24 w-24 text-gray-300 dark:text-gray-500 opacity-50"
+                class="h-24 w-24 text-gray-500 opacity-50"
                 aria-hidden="true"
               />
             </div>

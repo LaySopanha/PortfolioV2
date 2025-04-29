@@ -9,13 +9,18 @@ import AchievementsSection from './components/AchievementsSection.vue' // Import
 import ExperiencesSection from './components/ExperiencesSection.vue' // Import Experiences
 import ContactSection from './components/ContactSection.vue'
 import Highlight from './components/HighlightsSection.vue'
+import InteractiveBackground from './components/InteractiveBackground.vue' // Import the background
 // Removed SectionDivider import
+
+// Dark mode logic removed
 </script>
 
 <template>
-  <div id="app-container" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+  <div id="app-container" class="relative bg-space-dark text-gray-100"> 
+    <!-- <InteractiveBackground />  -->
     <NavBar />
-    <main>
+    <main class="bg-space-dark"> 
       <HeroSection />
       
       <AboutSection />
